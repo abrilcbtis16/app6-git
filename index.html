@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion Movil</title>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app6.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+  
+  <body onLoad="MM_preloadImages('imagenes/imgDefSus2.jpg','imagenes/imgHisSus2.jpg','imagenes/imgGamaSus2.png','imagenes/imgGaBaSus2.jpg','imagenes/imgGaMeSus2.jpg','imagenes/imgGaAlSus2.jpg','imagenes/imgComSus2.jpg','imagenes/imgFutSus1.jpg','imagenes/imgFut21Sus2.jpg','imagenes/imgFut31Sus2.jpg','imagenes/20170404_121846.jpg','imagenes/20170404_121913.jpg','imagenes/20170404_121935.jpg','imagenes/20170404_121954.jpg','imagenes/20170404_122011.jpg','imagenes/20170404_122036.jpg','imagenes/img7.jpg','imagenes/img11.jpg','imagenes/img15.jpg')">
+  
+  <div data-role="page" id="Principal" data-theme="b">
+  
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>BATALLA DE PUEBLA</h1>
+      </div>
+     
+      <div data-role="main" class="ui-content"> </div>
+      <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+       	   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Batalla del 4 de Mayo</h2>
+              <p>¿Qué sucedió y en dónde se llevo a cabo? Historia</p>
+           </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       	    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Batalla del 5 de Mayo</h2>
+              <p>Causas y Consecuencias</p>
+           </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+       	    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Héroes de la Batalla</h2>
+              <p>Participantes y defensores de Puebla</p>
+           </a>
+       </li>
+          <li class="ui-first-child ui-last-child">
+       	    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Monumentos </h2>
+              <p>Localización y Nombre</p>
+           </a>
+       </li>
+         <li class="ui-first-child ui-last-child">
+       	    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Museos para Aprender Más</h2>
+              <p>Localización y Nombre</p>
+           </a>
+       </li>
+        
+        
+       </ul>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/img6.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/img5.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/img7.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/img8.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/img10.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/img11.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/img15.jpg" alt="wowslideshow" title="" id="wows1_6"/></a></li>
+		<li><img src="data1/images/img16.jpg" alt="" title="" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/img6.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img5.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img7.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img8.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img10.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img11.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img15.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img16.jpg" alt=""/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       
+     </div>
+  
+     <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+       <div>
+         <img src="imagenes/logo.png" width="46" height="46">
+       </div>
+       <div>
+         <h4>Aplicacion Seis</h4>
+         <h4>Abril Rubi Lezama Mayorga 4 G</h4>
+       </div>
+     </div>
+  </div>
+    
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      	<h1>Batalla del 4 de Mayo</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+            <p> La historia de la <b>Batalla del 4 de mayo de 1862</b> relata que, durante la segunda intervención francesa en México, en la hacienda de La Trapera, los atlixquenses y elementos del ejército mexicano de la república, al mando de los General Antonio Carvajal y Tomas O´Horan se enfrentaron a las tropas al servicio del Segundo Imperio Mexicano comandadas por el Gral. José María Cobos y de Leonardo Márquez.
+
+Y que, gracias a este triunfo, el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar al día siguiente a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</p>
+       </div>
+      <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2911','','imagenes/img7.jpg',1)"><img src="imagenes/img5.jpg" width="314" height="178" id="Image2911"></a>
+    </center></div>
+      <br>
+       <center><b> Esta batalla culminó con una victoria republicana</b></center>
+             <br>
+             <p><b>La Trapera es un sitio histórico</b>.Actualmente se encuentra situada entre terrenos de cultivo y contadas viviendas, aunque sólo son trozos de muros en los que hace 153 años se resguardaron los víveres de guerra.
+
+En el sitio, en el sur de Atlixco, se aprecia una construcción de piedra de cantera derrumbada, que sólo conserva unas escaleras incompletas hechas del mismo material.
+
+Hace un año, el gobierno municipal colocó una placa conmemorativa que no tiene la descripción de los hechos ocurridos, pero sí los logotipos, eslogan y nombre del presidente José Luis Galeazzi Berra, con la fecha de su periodo de gestión. Lo que queda del inmueble se encuentra grafiteado.</p>
+                   <br>
+                 <div data-role="main" class="ui-content" align="center">
+  <div style="width:15%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    	<li class="ui-first-child ui-last-child">
+         <a href="http://www.capitalpuebla.com.mx/puebla/batalla-por-la-supervivencia-en-atlixco-la-sombra-tras-la-gloria-del-5-de-mayo" target="_self" data-role="button" >
+          <h2>Ver Más</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="https://www.elsoldepuebla.com.mx/estado/conmemora-atlixco-la-batalla-del-4-de-mayo" target="_self" data-role="button"  >
+          <h2>Conmemoración</h2>
+          </a>
+        </li>
+    </ul>
+  </div>
+  </div>   
+                   
+                   
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>La Primera Versión...</h1>
+            <div>
+             <p>La llegada de los franceses a México por la ruptura de los tratados de La Soledad dio entrada el 28 de abril a la batalla de Acultzingo, una guerra de un par de horas.
+En aquella época, el general Manuel Vicente Ramón Doblado.<br><br>
+
+Partida (1818-1865) buscaba una estrategia para reconciliar los conflictos económicos entre México y Francia. En tanto, los conservadores tenían una tropa en el eje Atlixco-Matamoros-Chautla.<br><br>
+
+“Las cartas que se escribieron relataban que se estableció un acuerdo entre los conservadores y liberales para irse y atacar a los franceses. En un periodo corto se dieron los escritos entre Doblado y los generales Leonardo Márquez y José María Cobos para darse un arreglo; se dice, en el que la República se compromete a pagarle el salario a los soldados y rangos que participaron en la batalla con la Secretaría de Guerra y Marina”, agregó.<br><br>
+
+Las misivas se desarrollaron el 4 de mayo, día en el que se presumió se dio el combate con la pblación atlixquense, situación que desecharía que el enfrentamiento se suscitó en esa fecha, aunque el mito dice lo contrario.<br><br>
+
+El cronista de la ciudad explicó que en 1862, Atlixco estaba tomado por los conservadores al mando del general Domingo Herrán, quienes precisamente tenía un vínculo directo social con los emperadores Maximiliano de Habsburgo y Carlota de Bélgica, pues fueron sus padrinos de boda.<br><br>
+
+Según documentan los textos antiguos, las tropas de la capital de Ignacio Zaragoza que quedaron al mando de los comandantes Tomás O’Horán y Antonio Carbajal llegaron a la región atlixquense. Aunque al Ejército conservador se sumaron atlixquenses a los bandos de ataque, aquellos que iban contra su propio país.<br><br>
+
+En las leyendas urbanas señalan que el general O’Horán llegó con una división y brigadas de mil y mil 200 elementos de infantería, caballería y artillería. Sin embargo, el investigador precisó que con datos del diario “Monitor Republicano” se puede estimar que sólo hubo una avanzada también denominada “fuerza de pleito” con 60 caballos del grupo “exploradores del valle”, que les fueron prestados por el general Leonardo Márquez.<br><br>
+
+La primera confrontación se realizó en las inmediaciones de la ex hacienda de Las Ánimas y que estaba en el perímetro del municipio que en aquella época alcanzaba en viviendas seis manzanas. Mientras, los conservadores respondían al ataque desde la hacienda de La Alfonsina.</p>
+             
+             
+             <br>
+            </div>
+            <div>
+             <center> <img src="imagenes/img7.jpg" width="43%" height="26%"> </center>
+            </div>
+    </div>
+
+
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+      	<h4>Aplicacion Seis, ARLM</h4>
+    </div>
+  </div>
+   </div>
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      	<h1>Batalla del 5 de Mayo</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+            <p> El 5 de Mayo se conmemora un aniversario más de la Batalla de Puebla que tuvo lugar en el año de 1862 cuando México era presidido por Benito Juarez y fue atacado por el Ejército Francés que en ese entonces era considerado como invencible ya que no había perdido una batalla en más de 50 años. </p>
+       </div>
+      <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29345','','imagenes/img11.jpg',1)"><img src="imagenes/img6.jpg" width="331" height="217" id="Image29345"></a>
+      </center></div>
+      <br>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>Antecedentes</h1>
+            <div>
+     <p>En octubre de 1861, <b>Francia, Inglaterra y España</b> suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México ya que este tenía una gran deuda de <b>80 millones de pesos</b>, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.<br><br>
+
+La alianza tripartita amenazó al presidente Benito Juarez con una invasión inminente si no se saldaba por completo las deudas que México tenía con los tres países europeos.<br><br>
+
+Juarez responde con un exhorto para  lograr un arreglo amistoso, y los invitó a conferenciar. Sin embargo, sabía que había una guerra inminente y trató de proteger la Ciudad de México trasladando pertrechos y  ordenó la fortificación de Puebla. Creo al <b>Ejército de Oriente</b> y el hombre que se designó en el mando fue el general <b>Ignacio Zaragoza.</b><br><br>
+
+En un principio la Alianza Tripartita aceptó el llamado al diálogo de Benito Juarez y sus representantes se reunieron con Manuel Doblado, ministro de Relaciones Exteriores del gobierno mexicano, quien consiguió que Juan Prim, representante español, y Lord John Russell por Inglaterra se retiraran. A este acuerdo se le conoce como los <b> Tratados Preliminares de la Soledad.</b><br><br>
+
+El 5 de marzo, cuando aún se realizaban las negociaciones de los Tratados de la Soledad, llegó a Veracruz un contingente militar francés bajo el mando de Charles Ferdinand Latrille, conde de Lorencez. A finales de abril, Lorencez desconoció los Tratados de Soledad y se puso en marcha, junto con sus efectivos, hacia Puebla, con el fin último de conquistar la Ciudad de México. <br><br></p>      
+            
+            </div>
+            <div>
+             <center> <img src="imagenes/img2.jpg" width="22%" height="34%"> </center>
+            </div>
+    </div>
+<br>
+<br>
+<br>
+<p>Antes del <b>5 de Mayo</b>, el día  28 de abril de 1862 tuvo lugar un enfrentamiento conocido como la Batalla de las Cumbres entre el Ejército Expedicionario Francés y el Ejército Mexicano. En este conflicto hubieron cerca de 500 bajas francesas en contra de apenas 50 bajas mexicanas. Pese a esto, el Ejército Expedicionario francés consigue hacerse con el control del Paso de Acultzingo.<br><br>
+
+Después de la Batalla de las Cumbres el conde de Lorencez conservaba su confianza y mandó a decir a Napoleon III que: “Somos tan superiores a los mexicanos en organización, disciplina, raza, moral y refinamiento de sensibilidades, que le ruego anunciarle a Su Majestad Imperial, Napoleón III, que a partir de este momento y al mando de nuestros 6,000 valientes soldados, ya soy dueño de México”<br><br>
+
+El 2 de mayo parte el Ejército Expedicionario Francés desde San Agustín del Palmar en Veracruz con rumbo para cruzar la Sierra Madre Oriental y dirigirse hacia <b>Puebla</b> ya que era paso obligado para llegar a la capital del país.<br><br>
+
+Cabe señalar que el Partido Conservador apoyaba la Invasión francesa e incluso formaron parte de la guerrilla que atacó en varias ocasiones al<b> Ejército de Oriente.</b><br><br>
+
+Otros generales mexicanos también participaron en la defensa de Puebla como es el caso de  las tropas de Oaxaca dirigidas por <b>Porfirio Díaz.</b> El centro de la línea lo defendió <b>Francisco Lamadrid</b> con las tropas del Estado de México y San Luis Potosí. La izquierda se apoyó en el cerro de Acueyametepec ubicado en el norte de la ciudad y en cuya cumbre se ubicaban los <b>Fuertes de Loreto y Guadalupe</b>, con el general <b>Miguel Negrete</b> a la cabeza de la <b>Segunda División de Infantería.</b><br><br>
+
+El 5 de mayo a las 9:15am aparecen los franceses en el horizonte pero no es sino hasta las 11:15am cuando comienzan las hostilidades anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.<br><br>
+
+El conde de Lorencez ordena una maniobra sorpresiva que divide a la columna francesa en dos y que da como resultado a 4,000 hombres marchando para atacar los Fuertes de Loreto y Guadalupe. Esta decisión pudo ser la causa de la derrota francesa ya que los mexicanos contaban con la ventaja en estas posiciones.<br><br>
+
+ <b>El 6o. Batallón de la Guardia Nacional del Estado de Puebla, bajo el mando del entonces coronel Juan Nepomuceno Méndez, fue el primer cuerpo del Ejército de Oriente en hacer frente a los franceses,</b> al ubicarse en la línea comprendida entre los fuertes, y rechazar su ataque.<br><br>
+
+Varios embates franceses fueron repelidos por la resistencia del Ejército Mexicano como es el caso de los zuavos, el regimiento de élite de la infantería francesa, quienes iniciaron un sigiloso ascenso hacia el Fuerte de Guadalupe pero fueron recibidos con bayonetas y obligados a retroceder.<br><br>
+
+El coronel mexicano <b>José Rojo</b> avisó a Antonio Álvarez que era tiempo de que la caballería mexicana entrara en acción para alcanzar una victoria completa. Ordenó a los Carabineros de Pachuca cargar sobre los restos de la columna, disparando sus carabinas y lanzando mandobles de sable sobre los franceses, siendo totalmente rechazados.<br><br>
+
+A las dos y media de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe. Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.<br><br>
+
+Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia <b>Amozoc.</b></p>
+ <br>
+                 <div data-role="main" class="ui-content" align="center">
+  <div style="width:10%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    	<li class="ui-first-child ui-last-child">
+         <a href="http://www.udg.mx/es/efemerides/2017/05-mayo" data-role="button" target="_self" >
+          <h2>Ver Más</h2>
+          </a>
+        </li>
+    </ul>
+  </div>
+  </div>   
+   <br>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>Consecuencias</h1>
+            <div>
+     <p>En Palacio Nacional en la Ciudad de México se sabía poco acerca del conflicto más allá del telegrama recibido a las 12:30 en el que Zaragoza avisaba que el intercambio de fuego había iniciado. A raíz de la incertidumbre el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos<br><br>
+
+<b>A las 4:15 de la tarde finalmente se recibió un nuevo telegrama:</b><br><br>
+
+<i>… Sobre el campo a las dos y media.— Dos horas y media nos hemos batido. El enemigo ha arrojado multitud de granadas.— Sus columnas sobre el cerro de Loreto y Guadalupe han sido rechazadas y seguramente atacó con cuatro mil hombres. Todo su impulso fue sobre el cerro.— En este momento se retiran las columnas y nuestras fuerzas avanzan sobre ellas. Comienza un fuerte aguacero.— I. Zaragoza</i><br><br>
+
+<b>Finalmente, a las 5:49 de la tarde, Zaragoza anuncia la victoria:</b><br><br>
+
+<i>Las armas del Supremo Gobierno se han cubierto de gloria: el enemigo ha hecho esfuerzos supremos por apoderarse del Cerro de Guadalupe, que atacó por el oriente de izquierda y derecha durante tres horas: fue rechazado tres veces en completa dispersión y en estos momentos está formado en batalla, fuerte de más de 4,000 hombres, frente al cerro de Guadalupe, fuera de tiro. No lo bato, como desearía, porque el Gobierno sabe (que) no tengo para ello fuerza bastante. Calculo la pérdida del enemigo, que llegó hasta los fosos de Guadalupe en su ataque, en 600 o 700 entre muertos y heridos; 400 habremos tenido nosotros. Sírvase vd. dar cuenta de este parte al C. Presidente.— I. Zaragoza</i><br><br></p>      
+            
+            </div>
+            <div>
+             <center> <img src="imagenes/img1.jpg" width="22%" height="34%"> </center>
+            </div>
+    </div>
+<br>
+<br>
+<br>
+ <br>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>Significado</h1>
+            <div>
+     <p>Aunque el triunfo de la Batalla del 5 de Mayo de 1862 no fue definitivo, la resonancia de esta victoria hizo estremecerse a la patria y quedó como un símbolo del valor de defender la nación ante un enemigo temible. México se alzó en medio de las naciones y el pueblo recobró la fe y el patriotismo, halagando el honor nacional. Zaragoza obligó a los franceses a huir, frenando con ello su soberbia y sus proyectos de expansión; animó el nacionalismo y destruyó la preponderancia de Europa en nuestro país. Es considerado un triunfo de los principios democráticos republicanos frente a la ambición imperialista, acentuó la opinión mexicana de libertad y soberanía, sobre la base del respeto mutuo, fundamentado en la paz, donde el elemento humano fue determinante. Se gestaron los principios propugnados por México de la no intervención y la autodeterminación de los pueblos.<br><br>
+
+3-	Insignia de uno de los batallones que pelearon en la Batalla del 05 de Mayo<br><br>
+
+Este hecho se sigue recordando de dos maneras: la oficial, que inició desde el primer aniversario, poco antes de que cayera el sitio de Puebla, con un discurso conmemorativo pronunciado en la alameda Central de la Ciudad de México en el año de 1863, que alentaba al pueblo a resistir y mantener la moral ante la incertidumbre, así como recordarles que era posible derrotar a un enemigo por poderoso que parezca. Celebración que continuó después de la expulsión de los franceses, hasta la actualidad.<br><br>
+
+La popular se pudo dar derivada de la celebración oficial; pero otra posibilidad es que los hombres que regresaron a sus comunidades, después de pelear contra los “franchutes” o “gabachos” (algunos producto de la leva), llevaron consigo recordatorios de la batalla, físicos y mentales, lo que pudo ser transmitido de padres a hijos por tradición oral hasta nuestros días. En algún momento comenzaron a representar la batalla en sus comunidades, como una forma de no olvidar esa historia que se volvió memoria colectiva pero con la diferencia de que no hay muerte, sino júbilo y donde todos comparten baile, canto y comida. El tiempo convirtió este encuentro bélico en relato, mito y fiesta; mismo que traspasó las fronteras y comenzó a celebrarse por las familias de origen mexicano que emigraron hacia los Estados Unidos.<br><br>
+
+ A fin de cuentas la diferencia del resultado estuvo en que a ellos los impulsaba la ambición, pero a los mexicanos la razón y el corazón. <br><br></p>      
+            
+            </div>           
+    </div>
+<br>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:15%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    	<li class="ui-first-child ui-last-child">
+         <a href="https://www.todopuebla.com/eventos/desfiledel5demayoenpuebla" target="_self" data-role="button"  >
+          <h2>Conmemoración</h2>
+          </a>
+        </li>
+    </ul>
+  </div>
+  </div>   
+<br>
+<br>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      	<h4>Aplicacion Seis, ARLM</h4>
+      </div>
+  </div>
+   </div>
+   
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      	<h1>Héroes de la Batalla</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+            <p> El líder de la batalla entre las fuerzas mexicanas fue el general Ignacio Zaragoza, quien tuvo a su lado a Porfirio Díaz, que después sería presidente de México, para diseñar la estrategia de ataque contra los franceses. Zaragoza y Díaz eran destacados militares con brillantes carreras en las fuerzas armadas. El Ejército galo estaba bajo el mando de Ferdinand Letrille, conde de Lorencez, que había informado a Napoleón III de que se haría pronto con la Ciudad de México porque su ejército era “superior de raza, de organización, de disciplina, moralidad y elevación de sentimientos”. </p>
+       </div>
+      <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3023','','imagenes/img15.jpg',1)"><img src="imagenes/img10.jpg" width="430" height="266" id="Image3023"></a>
+      </center></div>
+      <br>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>Nombres de Los Héroes</h1>
+           
+           <br>
+                 <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    	<li class="ui-first-child ui-last-child">
+         <a href="http://www.biografiasyvidas.com/biografia/z/zaragoza.htm" target="_self" data-role="button" >
+          <h2>Ignacio Zaragoza</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="http://www.biografiasyvidas.com/biografia/d/diaz_porfirio.htm" target="_self" data-role="button"  >
+          <h2>Porfirio Díaz</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="https://www.poblanerias.com/2016/06/miguel-negrete-heroe-poblano-de-la-batalla-del-cinco-de-mayo/" target="_self" data-role="button"  >
+          <h2>Miguel Negrete</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="http://www.biblioteca.tv/artman2/publish/1862_163/Parte_del_general_Francisco_de_Lamadrid.shtml" target="_self" data-role="button"  >
+          <h2>Francisco Lamadrid</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="http://www.buscabiografias.com/biografia/verDetalle/10092/Juan%20Nepomuceno%20Mendez" target="_self" data-role="button"  >
+          <h2>Juan Nepomuceno Méndez</h2>
+          </a>
+        </li>
+    </ul>
+    
+  </div>
+  </div>   
+     
+        <div>
+             <center> <img src="imagenes/img3.jpg" width="22%" height="34%"> </center>
+            </div>
+    </div>
+   
+  <br>
+    <br>
+    <center> <img src="imagenes/img5.jpg" width="43%" height="24%"> </center>
+          
+           
+           
+   
+
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      	<h4>Aplicacion Seis, ARLM</h4>
+      </div>
+  </div>
+   </div>
+    
+       
+        
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      	<h1>Monumentos</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+            <p> Más allá del desfile tradicional para conmemorar la Batalla del 5 de Mayo, hay otras obras relacionadas con la misma: libros, novelas, poemas, pinturas, monumentos y películas...</p>
+       </div>
+      <center>
+        <img src="imagenes/img15.jpg" width="402" height="239" alt="Monumentos">
+    </center></div>
+      <br>
+      <p>
+      Por ejemplo, el <b> Monumento Emblemático del 150 Aniversario de la Batalla del 5 de Mayo</b>, contruido en 2012 en una explanada al noreste del Centro Histórico de la Ciudad (en la plaza conocida como "la Mantarraya"), hecho a base de madera. Aunque actualmente ya no existe<br><br>
+      Asimismo, los poblanos pueden encotrar un monumento dedicado a la figura de <b>Ignacio Zaragoza</b>, quien se muestra altivo montado sobre su caballo, cerca de la zona de los Fuertes de Loreto y de Guadalupe, sobre la calzada que lleva a una conocida plaza comercial. Dicho monumento esta resguardado por diversas fuentes de agua.
+      
+      </p>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>Ubicación de algunos monumentos</h1>
+             <br>
+                 <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    	<li class="ui-first-child ui-last-child">
+         <a href="https://www.yelp.com.mx/biz/monumento-a-la-victoria-5-de-mayo-puebla" target="_self" data-role="button" >
+          <h2>Monumento a la Victoria 5 de Mayo</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="https://www.yelp.com.mx/biz/monumento-a-los-h%C3%A9roes-de-5-de-mayo-puebla" target="_self" data-role="button"  >
+          <h2>Monumento a los Héroes del 5 de Mayo</h2>
+          </a>
+        </li>
+        
+    </ul>
+    
+  </div>
+  </div>   
+        <div>
+             <center> <img src="imagenes/img16.jpg" width="43%" height="30%"> </center>
+            </div>
+    </div>
+    
+
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      	<h4>Aplicacion Seis, ARLM</h4>
+      </div>
+  </div>
+   </div>
+     
+
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      	<h1>Museos para Aprender Más</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+            <p>Una de las más grandes batallas que ha librado el país tuvo lugar en la ciudad de Puebla, la batalla del 5 de mayo de 1862. Así se localizan en el Estado de Puebla museos que explican y dan una panoráma más amplio de la historia.<br><br><b> Ejemplo: En la zona de los fuertes, en el mismo escenario del pasado, se ubica el museo interactivo.</b></p>
+            <p>El recorrido por el museo utiliza la tecnología más puntera para narrar las acciones militares y la biografía de héroes nacionales como Negrete, Díaz y Zaragoza. Pantallas táctiles, proyecciones en 3-D y contenidos interactivos descargables en dispositivos ofrecen una experiencia única al visitante.</p>
+        </div>
+      <center>
+        <img src="imagenes/img17.jpg" width="297" height="170" alt="Museo">
+    </center></div>
+      <br>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+           <h1>Localización de Alguos Museos</h1>
+            <br>
+                 <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    	<li class="ui-first-child ui-last-child">
+         <a href="http://puebla.travel/es/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" target="_self" data-role="button" >
+          <h2>Museo Interactivo</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="http://puebla.travel/es/novedades-puebla/item/tuneles-secretos-de-puebla" target="_self" data-role="button"  >
+          <h2>Pasaje Histórico del 5 de Mayo</h2>
+          </a>
+        </li>
+        
+    </ul>
+    
+  </div>
+  </div>   
+            <div>
+             <center><img src="imagenes/img4.jpg" width="165" height="105" alt="j">
+              <img src="imagenes/img14.jpg" width="149" height="111" alt="jh">
+              <img src="imagenes/img11.jpg" width="180" height="113" alt="8">
+              <img src="imagenes/img13.jpg" width="201" height="124" alt="8"></center>
+            </div>
+    </div>
+    
+
+
+
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      	<h4>Aplicacion Seis, ARLM</h4>
+      </div>
+  </div>
+   </div> 
+
+ 
+</body>
+</html>
